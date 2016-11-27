@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aae72bf7-627f-4757-bb2a-5123d12cff3b" name="Default" comment="" />
+    <list default="true" id="aae72bf7-627f-4757-bb2a-5123d12cff3b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI$1.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI$10.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI$2.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI$3.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI$4.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI$5.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI$6.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI$7.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI$8.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI$9.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI$Ventana.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI$Ventana.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab1/com/GUI.class" afterPath="$PROJECT_DIR$/out/production/Lab1/com/GUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/GUI.java" afterPath="$PROJECT_DIR$/src/com/GUI.java" />
+    </list>
     <ignored path="Lab1.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -12,6 +27,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Lab1$Main.coverage" NAME="Main Coverage Results" MODIFIED="1480283691255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.*</FILTER>
+    </SUITE>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -35,10 +55,20 @@
       <file leaf-file-name="GUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="441" column="60" selection-start-line="441" selection-start-column="8" selection-end-line="441" selection-end-column="60" />
+            <state relative-caret-position="293">
+              <caret line="536" column="62" selection-start-line="536" selection-start-column="62" selection-end-line="536" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="class#10460:13064" expanded="false" />
+                <element signature="class#13229:14724" expanded="false" />
+                <element signature="method#actionPerformed#0;class#13229:14724" expanded="false" />
+                <element signature="class#14884:16672" expanded="false" />
+                <element signature="class#16828:18741" expanded="false" />
+                <element signature="class#18797:20278" expanded="false" />
+                <element signature="method#mouseClicked#0;class#GUI#0" expanded="false" />
+                <element signature="class#Ventana#0;class#GUI#0" expanded="false" />
+                <element signature="method#setMalla#0;class#Ventana#0;class#GUI#0" expanded="false" />
+                <element signature="method#paintComponent#0;class#Ventana#0;class#GUI#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -47,8 +77,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+            <state relative-caret-position="60">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -57,11 +87,14 @@
       <file leaf-file-name="Tablero.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Tablero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1786">
-              <caret line="259" column="71" selection-start-line="259" selection-start-column="71" selection-end-line="259" selection-end-column="71" />
+            <state relative-caret-position="-64">
+              <caret line="622" column="0" selection-start-line="622" selection-start-column="0" selection-end-line="622" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#obtenerSucesores#0;class#Tablero#0" expanded="false" />
+                <element signature="method#explorarSucesoresAStar#0;class#Tablero#0" expanded="false" />
+                <element signature="method#explorarSucesoresDijkstra#0;class#Tablero#0" expanded="false" />
+                <element signature="method#generarSucesoresManual#0;class#Tablero#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -617,12 +650,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1480281867812</updated>
-      <workItem from="1480281871091" duration="416000" />
+      <workItem from="1480281871091" duration="3034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="416000" />
+    <option name="totallyTimeSpent" value="3034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="6" />
@@ -637,6 +670,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -645,7 +679,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27642277" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -667,7 +701,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/Tablero.java</url>
+          <line>586</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="9" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -675,6 +719,28 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Tablero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64">
+          <caret line="622" column="0" selection-start-line="622" selection-start-column="0" selection-end-line="622" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#obtenerSucesores#0;class#Tablero#0" expanded="false" />
+            <element signature="method#explorarSucesoresAStar#0;class#Tablero#0" expanded="false" />
+            <element signature="method#explorarSucesoresDijkstra#0;class#Tablero#0" expanded="false" />
+            <element signature="method#generarSucesoresManual#0;class#Tablero#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Casilla.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -683,31 +749,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Tablero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1786">
-          <caret line="259" column="71" selection-start-line="259" selection-start-column="71" selection-end-line="259" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#obtenerSucesores#0;class#Tablero#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="441" column="60" selection-start-line="441" selection-start-column="8" selection-end-line="441" selection-end-column="60" />
+        <state relative-caret-position="293">
+          <caret line="536" column="62" selection-start-line="536" selection-start-column="62" selection-end-line="536" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#10460:13064" expanded="false" />
+            <element signature="class#13229:14724" expanded="false" />
+            <element signature="method#actionPerformed#0;class#13229:14724" expanded="false" />
+            <element signature="class#14884:16672" expanded="false" />
+            <element signature="class#16828:18741" expanded="false" />
+            <element signature="class#18797:20278" expanded="false" />
+            <element signature="method#mouseClicked#0;class#GUI#0" expanded="false" />
+            <element signature="class#Ventana#0;class#GUI#0" expanded="false" />
+            <element signature="method#setMalla#0;class#Ventana#0;class#GUI#0" expanded="false" />
+            <element signature="method#paintComponent#0;class#Ventana#0;class#GUI#0" expanded="false" />
           </folding>
         </state>
       </provider>

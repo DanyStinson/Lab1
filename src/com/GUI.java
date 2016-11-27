@@ -77,6 +77,7 @@ public class GUI extends JPanel implements MouseListener {
         JLabel labelAlto = new JLabel("Alto");
         JLabel labelAncho = new JLabel("Ancho");
 
+        //JLabel labeltablero = new JLabel("Normal");
         /*
         * Declaramos las areas de introduccion del tamaño del tablero
         * */
@@ -91,6 +92,7 @@ public class GUI extends JPanel implements MouseListener {
         dimensiones.add(textFieldAlto);
         dimensiones.add(labelAncho);
         dimensiones.add(textFieldAncho);
+        //dimensiones.add(labeltablero);
 
 
         /*
@@ -105,7 +107,7 @@ public class GUI extends JPanel implements MouseListener {
 
         Button botonBusquedaEstrella = new Button("Buscar A*");
         Button botonBusquedaDijkstra = new Button("Buscar Dijkstra");
-        Button botonBusquedaVoraz = new Button("Buscar Voraz");
+        Button botonBusquedaVoraz = new Button("Buscar Avara");
         Button botonCrearTablero = new Button("Generar Tablero Nuevo");
         Button botonResetearTablero = new Button("Limpiar Mapa");
         Button botonAutomatico = new Button("Modo Automático");
@@ -173,16 +175,16 @@ public class GUI extends JPanel implements MouseListener {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (botonGenerarSucesores.isEnabled()) {
+                if (botonGenerarSucesores.isEnabled() || botonSiguiente.isEnabled()) {
                     JOptionPane.showMessageDialog(null, "Pulse Botón de Generar Sucesores para empezar el algorítmo");
-                    /*
-                     * En esta Seccion deberemos de llamar a generar sucesores, ya veremos como hacemos para que se
-                     * se puedan comparar con el resto de algoritmos.
-                     */
+
                     tipotablero = "astar";
                     panelDeJuego.setMalla("astar");
                     panelDeJuego.repaint();
+
                 } else {
+
+                    // Se utilizaria metodo automatico
                     if (tableroAstar.getSolucionEncontrada())
                         tableroAstar.reniciarTablero();
                     tipotablero = "astar";
@@ -190,6 +192,7 @@ public class GUI extends JPanel implements MouseListener {
                     panelDeJuego.setMalla("astar");
                     panelDeJuego.repaint();
                 }
+                //labeltablero.setText("estrella");
 
                 botonBusquedaEstrella.setEnabled(true);
                 botonBusquedaEstrella.setForeground(Color.blue);
@@ -210,16 +213,15 @@ public class GUI extends JPanel implements MouseListener {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (botonGenerarSucesores.isEnabled()) {
+                if (botonGenerarSucesores.isEnabled() || botonSiguiente.isEnabled()) {
                     JOptionPane.showMessageDialog(null, "Pulse Boton de Generar Sucesores para empezar el algoritmo");
-                    /**
-                     * En esta Seccion deberemos de llamar a generar sucesores, ya veremos como hacemos para que se
-                     * se puedan comparar con el resto de algoritmos.
-                     */
+
                     tipotablero = "dijkstra";
                     panelDeJuego.setMalla("dijkstra");
                     panelDeJuego.repaint();
                 } else {
+
+                    // Pasariamos al metodo automatico
                     if (tableroDijkstra.getSolucionEncontrada())
                         tableroDijkstra.reniciarTablero();
                     tableroDijkstra.busquedaDijkstra();
@@ -227,6 +229,8 @@ public class GUI extends JPanel implements MouseListener {
                     panelDeJuego.setMalla("dijkstra");
                     panelDeJuego.repaint();
                 }
+
+                //labeltablero.setText("dijkstra");
 
                 botonBusquedaEstrella.setEnabled(true);
                 botonBusquedaEstrella.setForeground(Color.black);
@@ -248,10 +252,7 @@ public class GUI extends JPanel implements MouseListener {
             public void actionPerformed(ActionEvent e) {
                 if (botonGenerarSucesores.isEnabled() || botonSiguiente.isEnabled()) {
                     JOptionPane.showMessageDialog(null, "Pulse Boton de Generar Sucesores para empezar el algoritmo");
-                    /**
-                     * En esta Seccion deberemos de llamar a generar sucesores, ya veremos como hacemos para que se
-                     * se puedan comparar con el resto de algoritmos.
-                     */
+
                     tipotablero = "avara";
                     panelDeJuego.setMalla("avara");
                     panelDeJuego.repaint();
@@ -264,6 +265,7 @@ public class GUI extends JPanel implements MouseListener {
                     panelDeJuego.repaint();
 
                 }
+                //labeltablero.setText("avara");
                 botonBusquedaEstrella.setEnabled(true);
                 botonBusquedaEstrella.setForeground(Color.black);
 
@@ -471,15 +473,15 @@ public class GUI extends JPanel implements MouseListener {
 
 
                 tableroAvara = tablero;
-                tableroAvara.setTipoBusqueda(Tablero.Busqueda.AVARA);
-//                tableroAvara.iniciarBusquedaManual();
+//                tableroAvara.setTipoBusqueda(Tablero.Busqueda.AVARA);
+                  tableroAvara.setCasillaActual(tableroAvara.iniciarBusquedaManual());
 
                 tableroAstar = tablero;
-                tableroAstar.setTipoBusqueda(Tablero.Busqueda.AESTRELLA);
+//                tableroAstar.setTipoBusqueda(Tablero.Busqueda.AESTRELLA);
 //                tableroAstar.iniciarBusquedaManual();
 
                 tableroDijkstra = tablero;
-                tableroDijkstra.setTipoBusqueda(Tablero.Busqueda.DIJKSTRA);
+//                tableroDijkstra.setTipoBusqueda(Tablero.Busqueda.DIJKSTRA);
 //                tableroDijkstra.iniciarBusquedaManual();
 
                 System.out.println("He propagado a todos los tableros");
@@ -502,8 +504,11 @@ public class GUI extends JPanel implements MouseListener {
                 tableroAvara.setTipoBusqueda(Tablero.Busqueda.AVARA);
                 tableroAvara.generarSucesoresManual(tableroAvara.getCasillaActual());
 
-                tableroDijkstra.setTipoBusqueda(Tablero.Busqueda.DIJKSTRA);
-                tableroAstar.setTipoBusqueda(Tablero.Busqueda.AESTRELLA);
+                //tableroDijkstra.setTipoBusqueda(Tablero.Busqueda.DIJKSTRA);
+                //tableroDijkstra.generarSucesoresManual(tableroDijkstra.getCasillaActual());
+
+                //tableroAstar.setTipoBusqueda(Tablero.Busqueda.AESTRELLA);
+                //tableroAstar.generarSucesoresManual(tableroAstar.getCasillaActual());
 
 
                 switch (tipotablero) {
@@ -528,6 +533,7 @@ public class GUI extends JPanel implements MouseListener {
 
             }
         });
+
         botonSiguiente.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -539,9 +545,11 @@ public class GUI extends JPanel implements MouseListener {
                 tableroAvara.setTipoBusqueda(Tablero.Busqueda.AVARA);
                 tableroAvara.setCasillaActual(tableroAvara.seleccionarActualManual());
 
+                //tableroDijkstra.setTipoBusqueda(Tablero.Busqueda.DIJKSTRA);
+                //tableroDijkstra.setCasillaActual(tableroDijkstra.seleccionarActualManual());
 
-                tableroDijkstra.setTipoBusqueda(Tablero.Busqueda.DIJKSTRA);
-                tableroAstar.setTipoBusqueda(Tablero.Busqueda.AESTRELLA);
+                //tableroAstar.setTipoBusqueda(Tablero.Busqueda.AESTRELLA);
+                //tableroAstar.setCasillaActual(tableroAstar.seleccionarActualManual());
 
 
                 switch (tipotablero) {
